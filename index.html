@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project Euro</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Overpass" rel="stylesheet"> 
+</head>
+<body>
+<h1>Convert Euro to Ron's</h1>
+<div class="container">
+	<input type="text" id="inp" placeholder="Type a number">
+	<p class="rue">Euro</p>
+</div>
+<div class="container2">
+	<button onclick="myFunction()">Convert</button>
+</div>
+	<p class="eur">To Ron :</p>
+	<p id="res"></p>
+<script>
+		function myFunction() {
+			var x = parseInt(document.getElementById("inp").value);
+			var res = x * 4.58 ;
+			if (isNaN(x)) {
+			document.getElementById("res").innerHTML = "Fill all input spaces with numbers!";
+		}
+		else {
+			document.getElementById("res").innerHTML = res + " Ron's";
+		}
+	}
+</script>
+</div>
+</body>
+</html>
